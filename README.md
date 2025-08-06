@@ -1,8 +1,11 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+export default function Itemssection(){
 
-## Getting Started
+    return(
+          <div className="w-full bg-black mx-auto px-4 h-50 ">
 
-First, run the development server:
+          </div>
+    );
+};
 
 ```bash
 npm run dev
