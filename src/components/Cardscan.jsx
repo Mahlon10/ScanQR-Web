@@ -26,7 +26,7 @@ export default function Cardscan({ isscanOpen, onClose }) {
       <div className="flex items-center justify-center">
         <div
           className="w-full max-w-3xl h-100 rounded-xl shadow-3 shadow-lg bg-cover bg-center text-white p-5 relative modal-content border border-white"
-          style={{ backgroundImage: `url('/cardscan2.jpg')` }}
+          style={{ backgroundImage: `url('https://i.ibb.co/tTGzb7qF/cardscan2.jpg')` }}
         >
 
           {/* Close Button */}

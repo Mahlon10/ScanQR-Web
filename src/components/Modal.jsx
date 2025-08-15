@@ -85,7 +85,7 @@ professionals connect. Each
 ScanQR card is embedded with a
 unique QR code. When someone
 scans your card using a
-smartphone, they're instantly
+smartphone, they are instantly
 taken to your personalized profile
 page.
 

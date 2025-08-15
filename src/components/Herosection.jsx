@@ -50,8 +50,8 @@ export default function HeroBanner() {
       }}
     >
       {/* Left Heading */}
-      <div className="absolute top-26 left-10">
-        <h1 className="text-5xl md:text-5xl text-white italic leading-tight">
+      <div className="absolute top-24 left-10">
+        <h1 className="text-4xl md:text-5xl text-white italic leading-tight">
           Get a <span style={{ color: '#d4e0e2' }}>profile card</span>
           <br />
           linked with <br />
@@ -64,30 +64,56 @@ export default function HeroBanner() {
         {/* Mobile View Demo Button (Triggers scan then redirect) */}
         <button
           onClick={openMobileScan}
-          className="block md:hidden bg-white text-blue-600 font-semibold px-3 py-1 ml-58 rounded-md hover:bg-blue-100 hover:scale-105 transition duration-300"
+          className="block md:hidden bg-white text-blue-600 mt-48 font-semibold px-3 py-1 ml-[-148] rounded-md hover:bg-blue-100 hover:scale-105 transition duration-300"
         >
           View Demo
         </button>
 
         {/* Purchase */}
         <Link href="/purchase">
-          <button className="bg-transparent text-white px-2 py-2 ml-45 border border-white rounded-md hover:bg-[#d4e0e2] hover:text-black hover:scale-105 transition duration-300 cursor-pointer">
+          <button className="
+          hidden md:inline-block
+          bg-transparent text-white px-2 py-2 ml-45
+          border border-white rounded-md
+          hover:bg-[#d4e0e2] hover:text-black hover:scale-105
+          transition duration-300 cursor-pointer
+          ">
             Proceed to Purchase
           </button>
         </Link>
+        {/* Mobile version — visible only on small screens */}
+        <div className="fixed bottom-30 left-1/2 transform -translate-x-1/2 md:hidden z-50">
+          <Link href="/purchase">
+            <button className="
+            bg-transparent text-white px-4 py-2
+            border border-white rounded-md
+            hover:bg-[#d4e0e2] hover:text-black hover:scale-105
+            transition duration-300 cursor-pointer
+            ">
+              Proceed to Purchase
+            </button>
+          </Link>
+        </div>
 
         {/* More Options */}
         <button
           onClick={openModal}
-          className="absolute bottom-50 right-10 mr-83 text-black font-semibold px-5 py-2 rounded-md shadow-lg
+          className="absolute bottom-60 right-25 mr-83 text-black font-semibold px-5 py-2 rounded-md shadow-lg
           bg-[#d4e0e2] border hover:bg-transparent hover:border-white hover:text-white transition duration-300 cursor-pointer"
+        >
+          More Options
+        </button>
+        <button
+          onClick={openModal}
+          className="fixed bottom-45 right-29 md:hidden text-black font-semibold px-5 py-2 rounded-md shadow-lg
+          bg-[#d4e0e2] border hover:bg-transparent hover:border-white hover:text-white transition duration-300 cursor-pointer z-50"
         >
           More Options
         </button>
       </div>
 
       {/* Theme Toggle */}
-      <div className="absolute bottom-16 right-6 md:right-42 scale-90 md:scale-100">
+      <div className="hidden md:block absolute bottom-16 right-6 md:right-42 scale-90 md:scale-100">
         <ThemeToggle />
       </div>
 
@@ -96,7 +122,7 @@ export default function HeroBanner() {
         src="https://i.postimg.cc/hPY7LwTM/cardscreen.png"
         alt="Card Scan"
         onClick={openScan}
-        className="hidden md:block absolute bottom-12 left-6 w-90 h-auto cursor-pointer hover:scale-105 transition"
+        className="hidden md:block absolute bottom-28 left-6 w-90 h-auto cursor-pointer hover:scale-105 transition"
       />
       <p className="hidden md:block absolute top-85 left-23 text-white text-base text-xl animate-pulse">
         Click Card to View Demo

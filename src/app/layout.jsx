@@ -1,14 +1,14 @@
 import '../styles/globals.css';
 import Navbar from '../components/Navbar';
 
-export const metadata = {
-  title: 'ScanQr',
-  description: 'One page for everyone',
-};
-
 export default function RootLayout({ children }:{children: React.ReactNode }){
   return (
     <html lang="en">
+    <head>
+        <link rel="icon" href="https://i.ibb.co/Rp630MQT/scanqr-fav.jpg" sizes="any" />
+        <title>ScanQR</title>
+        <meta name="description" content="A modern webapp containing profile social links and contacts" />
+      </head>
       <body>
         <Navbar />
         <main>{children}</main>
