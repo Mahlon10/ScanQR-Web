@@ -1,5 +1,4 @@
 import React from "react";
-import DigitalProduct from "@/components/Navs/digital-product";
 import { Metadata } from "next";
 
 export const metadata = {
@@ -8,12 +7,4 @@ export const metadata = {
 };
 
 
-const DigitalProductPage = () => {
-  return (
-    <main>
-      <DigitalProduct />
-    </main>
-  );
-};
 
-export default DigitalProductPage;
