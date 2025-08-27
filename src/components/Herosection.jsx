@@ -3,9 +3,10 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import Modal from '../components/Modal'; // "More Options" modal
+import MainModal from '../components/Modal';
 import ThemeToggle from '../components/Toggle';
 import Cardscan from '../components/Cardscan';
+
 
 export default function HeroBanner() {
   const [isOpen, setModalOpen] = useState(false);
@@ -70,7 +71,7 @@ export default function HeroBanner() {
         </button>
 
         {/* Purchase */}
-        <Link href="/purchase">
+        <Link href="/PaymentHero">
           <button className="
           hidden md:inline-block
           bg-transparent text-white px-2 py-2 ml-45
@@ -135,7 +136,7 @@ export default function HeroBanner() {
       </div>
 
       {/* Modals */}
-      <Modal isOpen={isOpen} onClose={closeModal} />
+      <MainModal isOpen={isOpen} onClose={closeModal} />
       <Cardscan isscanOpen={isscanOpen} onClose={closeScan}>
         {showScanMessage && (
           <div className="text-white text-lg text-center mt-4 animate-pulse">

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Modal from '../Modal';
+import MainModal from '../Modal';
 
 export default function Designers() {
   const [isOpen, setModalOpen] = useState(false);
@@ -36,7 +36,7 @@ export default function Designers() {
           </button>
       </div>
 
-      <Modal isOpen={isOpen} onClose={closeModal} />
+      <MainModal isOpen={isOpen} onClose={closeModal} />
     </div>
   );
 }
