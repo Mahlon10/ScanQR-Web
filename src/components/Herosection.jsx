@@ -120,7 +120,7 @@ export default function HeroBanner() {
 
       {/* Desktop-only Scan Trigger Image */}
       <img
-        src="https://i.postimg.cc/hPY7LwTM/cardscreen.png"
+        src="https://i.postimg.cc/RZ6Q141R/cardscreen2.png"
         alt="Card Scan"
         onClick={openScan}
         className="hidden md:block absolute bottom-28 left-6 w-90 h-auto cursor-pointer hover:scale-105 transition"
