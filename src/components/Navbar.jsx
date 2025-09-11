@@ -12,11 +12,11 @@ export default function Navbar() {
 
   const links = [
     { label: "Professionals", link: "/", isActive: pathname === "/" },
-    { label: "Designers", link: "/categories", isActive: pathname.startsWith("/categories") },
-    { label: "Bloggers", link: "/digital-product", isActive: pathname.startsWith("/digital-product") },
-    { label: "Developers", link: "/develop", isActive: pathname.startsWith("/develop") },
-    { label: "Artists", link: "/artist", isActive: pathname.startsWith("/artist") },
-    { label: "Fashion", link: "/free-shelf", isActive: pathname.startsWith("/free-shelf") },
+    { label: "Designers", link: "/Designers", isActive: pathname.startsWith("/Designers") },
+    { label: "Bloggers", link: "/Blogger", isActive: pathname.startsWith("/Blogger") },
+    { label: "Developers", link: "/Developer", isActive: pathname.startsWith("/Developer") },
+    { label: "Fashion", link: "/Fashion", isActive: pathname.startsWith("/Fashion") },
+    { label: "Artists", link: "/Artist", isActive: pathname.startsWith("/Artist") },
   ];
 
   return (
